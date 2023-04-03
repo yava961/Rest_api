@@ -29,6 +29,7 @@ public class ShopServiceImpl implements ShopService {
 
     @Override
     public Shop updateShopById(String id, Shop shop) {
+        shop.setId(id);
         return db.put(id, shop);
     }
 

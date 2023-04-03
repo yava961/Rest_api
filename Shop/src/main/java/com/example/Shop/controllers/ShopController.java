@@ -26,7 +26,7 @@ public class ShopController {
             return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
     }
-    @GetMapping
+    @GetMapping("/list")
     public ResponseEntity<List<Shop>> getAllShops(){
         try {
             List<Shop> shops = shopService.getAllShops();
